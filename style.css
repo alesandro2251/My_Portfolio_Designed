@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat';
+}
+a{
+  text-decoration: none;
+}
+.container{
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.section-title{
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+}
+.cta{
+  display: inline-block;
+  padding: 10px 30px;
+  --light: #f3f4f6;
+  color: var(--light);
+  background-color: grey;
+  border: 2px solid var(--light);
+  border-radius: 6%;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .13rem;
+  transition: all;
+}
+.cta:hover{
+  background: white;
+  color: black;
+}
+.cta1{
+  display: inline-block;
+  padding: 5px 15px;
+  --light: #f3f4f6;
+  color: var(--light);
+  background-color: grey;
+  border: 2px solid var(--light);
+  border-radius: 6%;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .13rem;
+  transition: all;
+  margin: 4px;
+}
+.cta1:hover{
+  background: white;
+  color: black;
+}
+
+/* Hero Section */
+#hero{
+  background-image: url(./img/back-img1.png);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+#hero::after{
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+#hero h1{
+  display:block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: white;
+}
+#hero h2{
+  display:block;
+  width: fit-content;
+  font-size: 2rem;
+  margin: 9px;
+  position: relative;
+  color: whitesmoke;
+}
+/* End Hero Section */
+
+
+/* Service Section */
+#services .services{
+   flex-direction: column;
+   text-align: center;
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 100px 0;
+}
+#services .p1{
+   font-size: 18px;
+   margin-top: 5px;
+   line-height: 2.5rem;
+   font-weight: 300px;
+}
+#services .service-bottom{
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#services .service-item{
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  font-size: 1.2rem;
+  margin: 20px;
+  border-radius: 10px;
+  background-image: url(./img/code.png);
+  background-size: cover;
+}
+#services .service-item:hover{
+  background:grey;
+  color: white;
+}
+#services .p2{
+  font-size: 17.5px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+#services .service-item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/* End Service Section */
+
+
+/*Project Section*/
+#projects .projects {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#projects .all-projects{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-item{
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  max-width: 780px;
+  font-size: 1.2rem;
+  margin: 20px;
+  border-radius: 10px;
+  background-image: url(./img/code.png);
+  background-size: cover;
+}
+#projects .project-info p{
+   font-size: 18px;
+   font-weight: 600;
+}
+#projects .project-item:hover{
+  background:grey;
+  color: white;
+}
+/* End Project Section*/
+
+
+/* About me Section*/
+#about .about{
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#about .col-right p{
+  text-align: center;
+  display: flex;
+  width: 480px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 13px;
+}
+#about .col-right .cta{
+   margin: 15px;
+}
+#about .about-img{
+   box-shadow: 10px 10px grey;
+}
+/* End About me Section*/
+
+/*Social*/
+#social{
+  background-color: rgb(61, 61, 61);
+}
+#social .social{
+  min-height: 200px;
+  flex-direction: column;
+}
+#social .social h2{
+  flex-direction: column;
+  text-align: center;
+}
+#social .social-items{
+   height: 100px;
+}
+#social .icon{
+  margin: 5px 20px;
+}
+/*End Social*/
+
+
+/*Header*/
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+#header .header {
+	min-height: 6vh;
+	background-color: black;
+	transition: 0.3s ease background-color;
+}
+#header .navbar {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+  margin: 9px;
+}
+#header .logo h1{
+  font-size: 30px;
+  
+  color: white;
+}
+#header .logo h1:hover{
+  color: grey;
+}
+
+/* End header*/
